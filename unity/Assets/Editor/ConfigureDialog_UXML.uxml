@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editor/ConfigureDialog_USS.uss?fileID=7433441132597879392&amp;guid=0c81dd906ba6dd8408b6e0a0b222daee&amp;type=3#ConfigureDialog_USS" />
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;">
+        <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1">
+            <ui:Label tabindex="-1" text="Please configure the Mixed Presence Toolkit subsystems and then click &quot;Confirm&quot;." parse-escape-sequences="true" display-tooltip-when-elided="true" style="flex-wrap: nowrap; white-space: normal; margin-bottom: 10px;" />
+            <ui:DropdownField label="Template" name="dropdownTemplate" choices="HMD Client,Camera Client,Server" index="0" style="margin-bottom: 10px;" />
+            <ui:Foldout text="Details">
+                <ui:Toggle label="Networking" name="toggleNetworking" focusable="false" style="justify-content: flex-start; align-self: flex-start; flex-direction: row-reverse;" />
+                <ui:Toggle label="World Anchoring" name="toggleWorldAnchor" focusable="false" style="flex-direction: row-reverse; align-self: flex-start;" />
+                <ui:Toggle label="Avatars" name="toggleAvatars" focusable="false" style="flex-direction: row-reverse; align-self: flex-start;" />
+                <ui:Toggle label="Kinect Tracking Consumer" name="toggleRemoteKinect" focusable="false" style="flex-direction: row-reverse; align-self: flex-start;" />
+                <ui:Toggle label="Kinect Tracking Provider" name="toggleLocalKinect" focusable="false" style="flex-direction: row-reverse; align-self: flex-start;" />
+                <ui:Toggle label="Logging" name="toggleLogging" style="flex-direction: row-reverse; align-self: flex-start;" />
+                <ui:Toggle label="Persistent Configuration" name="toggleConfig" style="flex-direction: row-reverse; align-self: flex-start;" />
+            </ui:Foldout>
+            <ui:VisualElement style="flex-grow: 1;" />
+            <ui:VisualElement style="align-items: flex-end;" />
+            <ui:Button text="Confirm" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonConfirm" style="align-self: flex-end;" />
+            <ui:HelpBox text="Necessary dependencies selected" message-type="Warning" name="helpBox" style="align-self: stretch; display: none;" />
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

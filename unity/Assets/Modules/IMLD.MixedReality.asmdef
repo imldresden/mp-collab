@@ -1,0 +1,23 @@
+{
+    "name": "IMLD.MixedReality",
+    "rootNamespace": "",
+    "references": [
+        "GUID:eaf2ffb04ce51134dbab5ce9e29b2e97",
+        "GUID:3b76ab8242cc35d479edf0a949d56d59",
+        "GUID:a7a4c34601384f9389d5c4207f3c6331",
+        "GUID:8b7cc3e86d77403b8b984c08cbaeaf8f",
+        "GUID:a9420e37d7990b54abdef6688edbe313",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:7404ed9ad29ad3844ac3a261c8d45b60"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2756809624268692385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8371758796339174930}
+  - component: {fileID: 2757606306729762793}
+  - component: {fileID: 5808191142345699293}
+  m_Layer: 0
+  m_Name: AvatarService
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8371758796339174930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2756809624268692385}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2757606306729762793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2756809624268692385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccc25e9384f360546879a91774020619, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avatars:
+  - name: RocketBoxLady
+    avatarPrefab: {fileID: 7063171598750705397, guid: acdb55d92c43e9348a6ad14d783e60e6, type: 3}
+  - name: ValidBoy
+    avatarPrefab: {fileID: -5070144255824505219, guid: 5529e6ae4b5af1a479eca7075f997ab6, type: 3}
+  - name: 
+    avatarPrefab: {fileID: -5070144255824505219, guid: 5529e6ae4b5af1a479eca7075f997ab6, type: 3}
+  _meshAvatarPrefab: {fileID: 7063171598750705397, guid: acdb55d92c43e9348a6ad14d783e60e6, type: 3}
+  _simpleAvatarPrefab: {fileID: 6521302533817469506, guid: d93bdcfb30e577a44bcdbb6980426988, type: 3}
+  _pointCloudAvatarPrefab: {fileID: -2420084639366428698, guid: 88057a5f024d49043b1e426560524d60, type: 3}
+  _validAvatarPrefab: {fileID: -5070144255824505219, guid: 5529e6ae4b5af1a479eca7075f997ab6, type: 3}
+  _rpmAvatarPrefab: {fileID: 0}
+  _avatarType: 1
+--- !u!114 &5808191142345699293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2756809624268692385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b6bebe63c4575d47b45b665155efa7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _avatar: {fileID: 0}

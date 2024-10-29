@@ -1,0 +1,6 @@
+{
+  "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+  "ServiceId_AUDIO": "25b85008-5e35-4615-9c9c-0eb079b3d14b",
+  "ClientId": "b96c626b-dd80-4217-b47d-1f06119eefd7",
+  "ServiceId_APP_STATE": "38606956-3125-4c60-b795-3142309da508"
+}

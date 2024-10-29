@@ -1,0 +1,7 @@
+.unity-toggle__checkmark {
+    margin-right: 5px;
+}
+
+.warning {
+    color: red;
+}

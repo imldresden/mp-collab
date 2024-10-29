@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnalysisXml name="3D InfoVis" axis_direction_x="right" axis_direction_y="up" axis_direction_z="forward">
+	<sessions> <!-- List of all sessions, each session contains tracked objects/data streams in one or more files -->
+		<session id="0" name="user01"/>
+		<session id="1" name="user02"/>
+		<session id="2" name="user03"/>
+		<session id="3" name="user04"/>
+		<session id="4" name="user05"/>
+		<session id="5" name="user06"/>
+		<session id="6" name="user07"/>
+		<session id="7" name="user08"/>
+		<session id="8" name="user09"/>
+		<session id="9" name="user10"/>
+		<session id="10" name="user11"/>
+	</sessions>
+	<conditions> <!-- list of conditions (e.g., techniques) with their names, "source" is the column in the csv files identifying the current condition -->
+		<condition>OrbitCamera</condition>
+		<condition>SpatialInputCamera</condition>
+	</conditions>
+	<objectsources>
+		<objectsource object_id="0" file="infovis-user-01-NT.csv" session_id="0" condition_id="0" condition_filter_column="condition" condition_filter="OrbitCamera" />
+		<objectsource object_id="0" file="infovis-user-01-NT.csv" session_id="0" condition_id="1" condition_filter_column="condition" condition_filter="SpatialInputCamera" />
+		<objectsource object_id="0" file="infovis-user-02-NT.csv" session_id="1" condition_id="0" condition_filter_column="condition" condition_filter="OrbitCamera" />
+		<objectsource object_id="0" file="infovis-user-02-NT.csv" session_id="1" condition_id="1" condition_filter_column="condition" condition_filter="SpatialInputCamera" />
+		<objectsource object_id="0" file="infovis-user-03-NT.csv" session_id="2" condition_id="0" condition_filter_column="condition" condition_filter="OrbitCamera" />
+		<objectsource object_id="0" file="infovis-user-03-NT.csv" session_id="2" condition_id="1" condition_filter_column="condition" condition_filter="SpatialInputCamera" />
+		<objectsource object_id="0" file="infovis-user-04-NT.csv" session_id="3" condition_id="0" condition_filter_column="condition" condition_filter="OrbitCamera" />
+		<objectsource object_id="0" file="infovis-user-04-NT.csv" session_id="3" condition_id="1" condition_filter_column="condition" condition_filter="SpatialInputCamera" />
+		<objectsource object_id="0" file="infovis-user-05-NT.csv" session_id="4" condition_id="0" condition_filter_column="condition" condition_filter="OrbitCamera" />
+		<objectsource object_id="0" file="infovis-user-05-NT.csv" session_id="4" condition_id="1" condition_filter_column="condition" condition_filter="SpatialInputCamera" />
+		<objectsource object_id="0" file="infovis-user-06-NT.csv" session_id="5" condition_id="0" condition_filter_column="condition" condition_filter="OrbitCamera" />
+		<objectsource object_id="0" file="infovis-user-06-NT.csv" session_id="5" condition_id="1" condition_filter_column="condition" condition_filter="SpatialInputCamera" />
+		<objectsource object_id="0" file="infovis-user-07-NT.csv" session_id="6" condition_id="0" condition_filter_column="condition" condition_filter="OrbitCamera" />
+		<objectsource object_id="0" file="infovis-user-07-NT.csv" session_id="6" condition_id="1" condition_filter_column="condition" condition_filter="SpatialInputCamera" />
+		<objectsource object_id="0" file="infovis-user-08-NT.csv" session_id="7" condition_id="0" condition_filter_column="condition" condition_filter="OrbitCamera" />
+		<objectsource object_id="0" file="infovis-user-08-NT.csv" session_id="7" condition_id="1" condition_filter_column="condition" condition_filter="SpatialInputCamera" />
+		<objectsource object_id="0" file="infovis-user-09-NT.csv" session_id="8" condition_id="0" condition_filter_column="condition" condition_filter="OrbitCamera" />
+		<objectsource object_id="0" file="infovis-user-09-NT.csv" session_id="8" condition_id="1" condition_filter_column="condition" condition_filter="SpatialInputCamera" />
+		<objectsource object_id="0" file="infovis-user-10-NT.csv" session_id="9" condition_id="0" condition_filter_column="condition" condition_filter="OrbitCamera" />
+		<objectsource object_id="0" file="infovis-user-10-NT.csv" session_id="9" condition_id="1" condition_filter_column="condition" condition_filter="SpatialInputCamera" />
+		<objectsource object_id="0" file="infovis-user-11-NT.csv" session_id="10" condition_id="0" condition_filter_column="condition" condition_filter="OrbitCamera" />
+		<objectsource object_id="0" file="infovis-user-11-NT.csv" session_id="10" condition_id="1" condition_filter_column="condition" condition_filter="SpatialInputCamera" />
+	</objectsources>
+	<mediasources> <!-- list of media objects -->
+		<mediasource anchor_id="1" type="video" file="video1.mp4" in_time="3.0"/>
+	</mediasources>
+	<objects> <!-- list of objects each object/datastream consists of different attributes, this list defines them -->
+		<object id="0" parent="-1" name="tablet" type="trackable" data_source="optitrack" static="false" units="mm" hue="0.575" saturation="1.0" value="1.0" rotation_format="direction_vector" time_format="long">
+			<transform_position_x>camPos-X</transform_position_x>
+			<transform_position_y>camPos-Y</transform_position_y>
+			<transform_position_z>camPos-Z</transform_position_z>
+			<transform_rotation_w></transform_rotation_w>
+			<transform_rotation_x>camDir-X</transform_rotation_x>
+			<transform_rotation_y>camDir-Y</transform_rotation_y>
+			<transform_rotation_z>camDir-Z</transform_rotation_z>
+      		<transform_scale_x>{1.0}</transform_scale_x>
+      		<transform_scale_y>{1.0}</transform_scale_y>
+      		<transform_scale_z>{1.0}</transform_scale_z>
+			<timestamp>timestamp</timestamp>
+      		<model>tablet_new.obj</model>
+		</object>    
+		<object id="1" parent="-1" name="static_object" type="object" data_source="" static="true" units="m"  hue="0.58" saturation="0.8" value="0.9" rotation_format="quaternion" time_format="long">
+			<transform_position_x>{0.0}</transform_position_x>
+			<transform_position_y>{0.0}</transform_position_y>
+			<transform_position_z>{0.0}</transform_position_z>
+			<transform_rotation_w>{1.0}</transform_rotation_w>
+			<transform_rotation_x>{0.0}</transform_rotation_x>
+			<transform_rotation_y>{0.0}</transform_rotation_y>
+			<transform_rotation_z>{0.0}</transform_rotation_z>
+			<model>table_new.obj</model>
+		</object>
+	</objects>
+	<anchors> <!-- list of anchors for 2D view containers -->
+		<anchor id="0" parent="-1" units="m" rotation_format="direction_vector">
+			<transform_position_x>{0.0}</transform_position_x>
+      		<transform_position_y>{-0.72}</transform_position_y>
+      		<transform_position_z>{0.0}</transform_position_z>
+      		<transform_rotation_w></transform_rotation_w>
+      		<transform_rotation_x>{0.0}</transform_rotation_x>
+      		<transform_rotation_y>{-1.0}</transform_rotation_y>
+      		<transform_rotation_z>{0.0}</transform_rotation_z>
+      		<transform_scale_x>{5.0}</transform_scale_x>
+      		<transform_scale_y>{5.0}</transform_scale_y>
+  			<transform_scale_z>{1.0}</transform_scale_z>
+		</anchor>
+ 		<anchor id="1" parent="0" units="m" rotation_format="direction_vector">
+			<transform_position_x>{0.0}</transform_position_x>
+      		<transform_position_y>{0.0}</transform_position_y>
+      		<transform_position_z>{-0.02}</transform_position_z>
+      		<transform_rotation_w></transform_rotation_w>
+      		<transform_rotation_x>{0.0}</transform_rotation_x>
+      		<transform_rotation_y>{0.0}</transform_rotation_y>
+      		<transform_rotation_z>{0.0}</transform_rotation_z>
+      		<transform_scale_x>{0.24}</transform_scale_x>
+      		<transform_scale_y>{0.16}</transform_scale_y>
+  			<transform_scale_z>{1.0}</transform_scale_z>
+		</anchor>
+	</anchors>  
+</AnalysisXml>
