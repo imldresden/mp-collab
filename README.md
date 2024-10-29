@@ -15,3 +15,4 @@ Installation
 1. To limit the size of the repository, several resources and libraries have been removed. Please download these files from the releases section and copy them into the cloned repository.
 2. Use _MoveLibraryFiles.bat_ (included in the resources download) to copy files from the Packages directory to the correct locations.
 3. To run the Kinect body tracking in Unity, copy _directml.dll_ to the installation directory of the Unity editor.
+4. To build a standalone executable, make sure to put the required DLLs for ONNX Runtime execution in the same directory.
